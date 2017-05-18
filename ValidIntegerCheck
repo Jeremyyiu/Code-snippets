@@ -1,6 +1,6 @@
 int isNumber(char number[])
 {
-	int i = 0;
+    int i = 0;
     //check if the number is a negative number
     if (number[0] == '-')
         return 1;
