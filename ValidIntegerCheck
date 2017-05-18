@@ -1,0 +1,15 @@
+int isNumber(char number[])
+{
+	 int i = 0;
+    //check if the number is a negative number
+    if (number[0] == '-')
+        return 1;
+    while(number[i] != 0)
+    {
+        //Check if the number is not a digit
+        if (!isdigit(number[i]))
+            return 1;
+      i++;
+    }
+    return 0;
+}
